@@ -15,7 +15,7 @@
         <classes>
             <class name="com.interview.oracle.LoginTest">
             </class>
-            <class name="com.interview.oracle.FlightFinder">
+            <class name="com.interview.oracle.FlightFinderTest">
             </class>
 
         </classes>
