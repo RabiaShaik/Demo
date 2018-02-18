@@ -21,11 +21,7 @@ public class DriverFactory {
     public static WebDriver driver;
     public static Properties prop;
 
-    // Get a new WebDriver Instance.
-    // There are various implementations for this depending on browser. The required browser can be set as an environment variable.
-    // Refer http://getgauge.io/documentation/user/current/managing_environments/README.html
-    public static WebDriver getDriver() {
-
+    public DriverFactory(){
         try {
             prop = new Properties();
             FileInputStream ip = new FileInputStream("src/main/java/com/interview/configs/config.properties");
@@ -35,43 +31,39 @@ public class DriverFactory {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
-        String browser = prop.getProperty("browser");
-        if(browser.toUpperCase().equals("CHROME")){
-            ChromeDriverManager.getInstance().setup();
-            return new ChromeDriver();
-        }
-        switch (browser)
-        {
-            case "IE":
-                InternetExplorerDriverManager.getInstance().setup();
-                return new InternetExplorerDriver();
-            case "FIREFOX":
-                FirefoxDriverManager.getInstance().setup();
-                return new FirefoxDriver();
-            default:
+    // Get a new WebDriver Instance.
+   public static WebDriver getDriver() {
+
+
+            String browser = prop.getProperty("browser");
+            if(browser.toUpperCase().equals("CHROME")){
                 ChromeDriverManager.getInstance().setup();
                 return new ChromeDriver();
+            }
+            switch (browser)
+            {
+
+                case "IE":
+                    InternetExplorerDriverManager.getInstance().setup();
+                    return new InternetExplorerDriver();
+                case "FIREFOX":
+                    FirefoxDriverManager.getInstance().setup();
+                    return new FirefoxDriver();
+                default:
+                    ChromeDriverManager.getInstance().setup();
+                    return new ChromeDriver();
+            }
         }
-    }
+
 
     @BeforeMethod
     public void initializeDriver(){
-
-        try {
-            prop = new Properties();
-            FileInputStream ip = new FileInputStream("src/main/java/com/interview/configs/config.properties");
-            prop.load(ip);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         driver = getDriver();
         driver.get(prop.getProperty("url"));
-
     }
+
     // Close the webDriver instance
     @AfterMethod
     public void closeDriver(){
