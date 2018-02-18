@@ -17,7 +17,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         password().sendKeys(fPassword);
         submitButton().click();
         tripType().click();
-        passengersCount().selectByIndex(2);
+        passengersCount().selectByValue(prop.getProperty("passengersCount"));
         departingFrom().selectByValue(prop.getProperty("departingFrom"));
         departingMonth().selectByValue(prop.getProperty("departingMonth"));
         departingDate().selectByValue(prop.getProperty("departingDate"));
@@ -27,7 +27,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         returningMonth().selectByValue(prop.getProperty("returningMonth"));
         returningDate().selectByValue(prop.getProperty("returningDate"));
         travelClass().click();
-        airline().selectByIndex(2);
+        airline().selectByVisibleText(prop.getProperty("airline"));
         continueButton().click();
         Assert.assertEquals(flights_search_expected_title, flightSearchPageTitle());
     }
@@ -41,7 +41,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         password().sendKeys(fPassword);
         submitButton().click();
         tripType().click();
-        passengersCount().selectByIndex(3);
+        passengersCount().selectByValue(prop.getProperty("passengersCount"));
         departingFrom().selectByValue(prop.getProperty("departingFrom"));
         departingMonth().selectByValue(prop.getProperty("departingMonth"));
         departingDate().selectByValue(prop.getProperty("departingDate"));
@@ -51,7 +51,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         returningMonth().selectByValue(prop.getProperty("returningMonth"));
         returningDate().selectByValue(prop.getProperty("returningDate"));
         travelClass().click();
-        airline().selectByIndex(2);
+        airline().selectByVisibleText(prop.getProperty("airline"));
         continueButton().click();
         Assert.assertTrue(page().contains(city));
     }
@@ -66,7 +66,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         password().sendKeys(fPassword);
         submitButton().click();
         tripType().click();
-        passengersCount().selectByIndex(3);
+        passengersCount().selectByValue(prop.getProperty("passengersCount"));
         departingFrom().selectByValue(prop.getProperty("departingFrom"));
         departingMonth().selectByValue(prop.getProperty("departingMonth"));
         departingDate().selectByValue(prop.getProperty("departingDate"));
@@ -74,7 +74,7 @@ public class FlightFinderTest extends LocatorsAndActions {
         returningMonth().selectByValue(prop.getProperty("returningMonth"));
         returningDate().selectByValue(prop.getProperty("returningDate"));
         travelClass().click();
-        airline().selectByIndex(2);
+        airline().selectByVisibleText(prop.getProperty("airline"));
         continueButton().click();
         Assert.assertTrue(flightActual().contains(flightExpected));
     }
