@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AutomationTask" duration-ms="114485" started-at="2018-02-18T11:10:10Z" finished-at="2018-02-18T11:12:05Z">
+    <groups>
+    </groups>
+    <test name="checkInvalidLogin" duration-ms="114485" started-at="2018-02-18T11:10:10Z" finished-at="2018-02-18T11:12:05Z">
+      <class name="com.interview.oracle.LoginTest">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="initializeDriver" is-config="true" duration-ms="2948" started-at="2018-02-18T11:10:10Z" finished-at="2018-02-18T11:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="checkValidLogin(java.lang.String, java.lang.String)[pri:1, instance:com.interview.oracle.LoginTest@5056dfcb]" name="checkValidLogin" duration-ms="37207" started-at="2018-02-18T11:10:13Z" data-provider="validAuthentication" finished-at="2018-02-18T11:10:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidLogin -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="closeDriver" is-config="true" duration-ms="71" started-at="2018-02-18T11:10:50Z" finished-at="2018-02-18T11:10:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="initializeDriver" is-config="true" duration-ms="2113" started-at="2018-02-18T11:10:50Z" finished-at="2018-02-18T11:10:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="checkValidLogin(java.lang.String, java.lang.String)[pri:1, instance:com.interview.oracle.LoginTest@5056dfcb]" name="checkValidLogin" duration-ms="19107" started-at="2018-02-18T11:10:52Z" data-provider="validAuthentication" finished-at="2018-02-18T11:11:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[karthikrajesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[karthikrajesh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidLogin -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="closeDriver" is-config="true" duration-ms="70" started-at="2018-02-18T11:11:12Z" finished-at="2018-02-18T11:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="initializeDriver" is-config="true" duration-ms="2034" started-at="2018-02-18T11:11:12Z" finished-at="2018-02-18T11:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="checkInvalidLogin(java.lang.String, java.lang.String)[pri:2, instance:com.interview.oracle.LoginTest@5056dfcb]" name="checkInvalidLogin" duration-ms="1480" started-at="2018-02-18T11:11:14Z" finished-at="2018-02-18T11:11:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[medo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[medo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInvalidLogin -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.LoginTest@5056dfcb]" name="closeDriver" is-config="true" duration-ms="85" started-at="2018-02-18T11:11:15Z" finished-at="2018-02-18T11:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.interview.oracle.LoginTest -->
+      <class name="com.interview.oracle.FlightFinder">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="initializeDriver" is-config="true" duration-ms="1998" started-at="2018-02-18T11:11:15Z" finished-at="2018-02-18T11:11:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="flightFinderFromToCityTest(java.lang.String, java.lang.String)[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="flightFinderFromToCityTest" duration-ms="19045" started-at="2018-02-18T11:11:17Z" finished-at="2018-02-18T11:11:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightFinderFromToCityTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="closeDriver" is-config="true" duration-ms="67" started-at="2018-02-18T11:11:36Z" finished-at="2018-02-18T11:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="initializeDriver" is-config="true" duration-ms="2098" started-at="2018-02-18T11:11:36Z" finished-at="2018-02-18T11:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="flightFinderPageTitleTest(java.lang.String, java.lang.String)[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="flightFinderPageTitleTest" duration-ms="18698" started-at="2018-02-18T11:11:38Z" finished-at="2018-02-18T11:11:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightFinderPageTitleTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="closeDriver" is-config="true" duration-ms="67" started-at="2018-02-18T11:11:57Z" finished-at="2018-02-18T11:11:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="initializeDriver" is-config="true" duration-ms="2017" started-at="2018-02-18T11:11:57Z" finished-at="2018-02-18T11:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="flightValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="flightValidationTest" duration-ms="5281" started-at="2018-02-18T11:11:59Z" finished-at="2018-02-18T11:12:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightValidationTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.interview.oracle.FlightFinder@6574b225]" name="closeDriver" is-config="true" duration-ms="77" started-at="2018-02-18T11:12:04Z" finished-at="2018-02-18T11:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.interview.oracle.FlightFinder -->
+    </test> <!-- checkInvalidLogin -->
+  </suite> <!-- AutomationTask -->
+</testng-results>

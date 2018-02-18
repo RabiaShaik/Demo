@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationTask"  >
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <parameter name="nUsername" value="medo" />
+    <parameter name="nPassword" value="medo" />
+    <parameter name="fUsername" value="demo" />
+    <parameter name="fPassword" value="demo" />
+
+
+    <test name="SmokeTests">
+        <classes>
+            <class name="com.interview.oracle.LoginTest">
+            </class>
+            <class name="com.interview.oracle.FlightFinder">
+            </class>
+
+        </classes>
+    </test>
+</suite>

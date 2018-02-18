@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AutomationTask]">
+  <parameter name="nPassword" value="medo"/>
+  <parameter name="fUsername" value="demo"/>
+  <parameter name="fPassword" value="demo"/>
+  <parameter name="nUsername" value="medo"/>
+  <test name="checkInvalidLogin">
+    <classes>
+      <class name="com.interview.oracle.LoginTest"/>
+      <class name="com.interview.oracle.FlightFinder"/>
+    </classes>
+  </test> <!-- checkInvalidLogin -->
+</suite> <!-- Failed suite [AutomationTask] -->
